@@ -1,6 +1,6 @@
 {
   "name": "@mdkaifee/dostlang",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Global CLI for running DostLang 2.0 programs.",
   "license": "MIT",
   "type": "commonjs",

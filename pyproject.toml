@@ -9,7 +9,7 @@ description = "Build and run a custom mini programming language in Python."
 readme = "README.md"
 license = { file = "LICENSE" }
 authors = [
-  { name = "Your Name", email = "you@example.com" }
+  { name = "Md Kaifee", email = "3softwaredeveloper@gmail.com" }
 ]
 requires-python = ">=3.9"
 dependencies = []
