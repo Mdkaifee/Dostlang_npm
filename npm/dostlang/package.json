@@ -1,0 +1,28 @@
+{
+  "name": "@mdkaifee/dostlang",
+  "version": "0.1.0",
+  "description": "Global CLI for running DostLang 2.0 programs.",
+  "license": "MIT",
+  "type": "commonjs",
+  "bin": {
+    "dostlang": "bin/dostlang.js"
+  },
+  "files": [
+    "bin",
+    "python",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepack": "node scripts/sync-runtime.mjs"
+  },
+  "keywords": [
+    "dostlang",
+    "cli",
+    "language",
+    "interpreter"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}

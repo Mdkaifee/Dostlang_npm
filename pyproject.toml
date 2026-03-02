@@ -1,0 +1,52 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "worklib"
+version = "0.1.0"
+description = "Build and run a custom mini programming language in Python."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["library", "utility"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/worklib"
+Repository = "https://github.com/your-username/worklib"
+Issues = "https://github.com/your-username/worklib/issues"
+
+[project.scripts]
+dostlang = "worklib.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+  "build>=1.2",
+  "twine>=5.1",
+  "ruff>=0.6",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/worklib"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
